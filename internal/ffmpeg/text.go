@@ -1,3 +1,7 @@
 package ffmpeg
 
-type Text struct{}
+type Text struct {
+	Font
+	Position
+	Content string
+}
