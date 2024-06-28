@@ -19,7 +19,7 @@ camera_position_y=0
 # echo $(v4l2-ctl --list-formats-ext -d "$CAMERA")
 
 audio_output_device="$(pactl get-default-sink).monitor"
-audio_input_device="$(pactl get-default-sink).monitor"
+audio_input_device="$(pactl get-default-source)"
 
 threads=$(echo "$(nproc)/2" | bc)
 
