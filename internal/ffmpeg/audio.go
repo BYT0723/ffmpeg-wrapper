@@ -1,3 +1,6 @@
 package ffmpeg
 
-type Audio struct{}
+type Audio struct {
+	Device string
+	Format string
+}
